@@ -1,3 +1,4 @@
+// this algorithm only works if there is an element with occurence more than n/2
 // in this algorithm we choose a candidate when we iteratre through the array and increment count if nums[i] == candidate else we decrement count, if count get 0
 // we change the cadidate to next element, and candidate in last will be the answer after we verify it by iterating the array again and counting its appearance
 // this works on moore voting principe that after the voting the last candidate i.e count is more than 0 for it, that is the candidate with voting more than half
