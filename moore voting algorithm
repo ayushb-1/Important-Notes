@@ -1,0 +1,8 @@
+// in this algorithm we choose a candidate when we iteratre through the array and increment count if nums[i] == candidate else we decrement count, if count get 0
+// we change the cadidate to next element, and candidate in last will be the answer after we verify it by iterating the array again and counting its appearance
+// this works on moore voting principe that after the voting the last candidate i.e count is more than 0 for it, that is the candidate with voting more than half
+// here count = 0  denotes that upto ith in array that candidate is being canceled out by rest of the elements for example  - [7,7,5,2,7,5,7] here when we reach to 
+// element 5 the count of candidate 7 will become 0 because 5,5,2 cancels three 7s that is why we then choose the next element
+
+
+// another version of it is n/3 majority problem in which we take 2 candidates and 2 counts
